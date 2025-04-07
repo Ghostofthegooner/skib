@@ -1,0 +1,29 @@
+cvvimport random
+import time
+
+cat_first_names = ["Fluffy", "Whisker", "Captain", "Sir", "Lady", "Meow", "Purr"]
+cat_last_names = ["McFur", "Whiskertons", "Paws", "Fuzz", "Snuggles", "Von Meowenstein"]
+
+titles = ["The Brave", "The Sleepy", "The Loud", "The Invisible", "The Destroyer of Furniture"]
+
+def generate_cat_name():
+    first = random.choice(cat_first_names)
+    last = random.choice(cat_last_names)
+    title = random.choice(titles)
+    return f"{first} {last}, {title}"
+
+def meow_animation():
+    print("Summoning the cat...")
+    for _ in range(3):
+        print(".")
+        time.sleep(0.5)
+    print("🐾 MEOW 🐾\n")
+
+def main():
+    meow_animation()
+    cat_name = generate_cat_name()
+    print(f"Your cat's official name is: {cat_name}")
+
+if __name__ == "__main__":
+    main()
+#籒籋籣簽籒籮粂籭籝籮籠籱籒籢籝簻籞籮籕簾籒籛籎籰籑籛籖籱籑籘籠籭籞籘籠籬籒籾籒籮籞籋籍簹籞籱籕类籞籘籰籭籞籋籍籽籑籛籖籬籞籘籙籼籑籾籣簹籞籢籙类籒籢籕籾籒籱籍籽籑籾籚籰籞籟籆籆
